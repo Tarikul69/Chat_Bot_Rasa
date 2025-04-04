@@ -1,0 +1,8 @@
+.idea
+*.pyc
+.mp4
+*.jpg
+.png
+.git
+# Local virtual environments
+env/
