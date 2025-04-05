@@ -4,5 +4,6 @@
 *.jpg
 .png
 .git
+.vscode
 # Local virtual environments
 env/
