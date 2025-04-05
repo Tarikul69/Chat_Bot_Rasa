@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rasa Chatbot</title>
+</head>
+
+<body>
+    <h1>Talk to Rasa Bot</h1>
+    <input type="text" id="userInput" placeholder="Say something" />
+    <button onclick="sendMessage()">Send</button>
+    <p><strong>Bot:</strong> <span id="botReply"></span></p>
+
+    <script>
+        function sendMessage() {
+            const msg = document.getElementById("userInput").value;
+            fetch("/send", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: "message=" + encodeURIComponent(msg),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("botReply").innerText = data.reply;
+                });
+        }
+    </script>
+</body>
+
+</html>
