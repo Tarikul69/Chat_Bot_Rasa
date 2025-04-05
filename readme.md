@@ -2,7 +2,7 @@
 
 ![Chatbot UI](chat-bot.png){width=50%}
 <center>
-    <img src="chat-bot.png" alt="Chatbot UI" width="500" height="300" />
+    <img src="chat-bot.png" alt="Chatbot UI" width="400" height="300" />
 </center>
 
 ---
