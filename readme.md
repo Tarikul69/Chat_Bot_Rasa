@@ -1,6 +1,6 @@
-# 🤖 Rasa + Flask Chatbot Deployment
+# 🤖 Chatbot 
 
-![Chatbot UI](chat-bot.png)
+![Chatbot UI](chat-bot.png){ width=50% }
 
 ---
 
