@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-RASA_URL = "http://localhost:5005/webhooks/rest/webhook"
+RASA_URL = "http://localhost:5055/webhooks/rest/webhook"
 
 @app.route("/")
 def home():

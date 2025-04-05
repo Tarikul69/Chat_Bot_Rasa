@@ -1,6 +1,6 @@
 # 🤖 Rasa + Flask Chatbot Deployment
 
-Welcome to a full-stack chatbot project that combines the power of **Rasa** for natural language understanding and dialogue management with a **Flask** frontend that displays a live chatbot UI using **Rasa Webchat**.
+![Chatbot UI](chat-bot.png)
 
 ---
 
@@ -35,7 +35,7 @@ rasa_flask_chatbot/
 │   │   └── index.html        # Chat UI using Rasa Webchat
 │   └── app.py                # Flask server
 │
-├── rasa/                     # Rasa Project
+├── backend/                  # Rasa Project
 │   ├── actions/              # Custom actions
 │   │   └── actions.py
 │   ├── data/                 # NLU data, stories, rules
@@ -45,7 +45,9 @@ rasa_flask_chatbot/
 │   ├── endpoints.yml         # Action server and tracker store
 │   └── models/               # Trained Rasa models
 │
-├── run_rasa.sh               # Shell script to run Rasa server
+├── run_rasa.sh
+├── .gitignore               # Shell script to run Rasa server
 ├── run_actions.sh            # Script to run action server
 ├── requirements.txt          # Python dependencies
 └── README.md
+
