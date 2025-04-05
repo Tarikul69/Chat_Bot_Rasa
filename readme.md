@@ -1,6 +1,6 @@
 # 🤖 Chatbot 
 
-![Chatbot UI](chat-bot.png){ width=50% }
+![Chatbot UI](chat-bot.png){width=50%}
 
 ---
 
