@@ -89,3 +89,10 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    
+- intent: ask_time
+  examples: |
+    - What time is it?
+    - Can you tell me the current time?
+    - Time please
+    - Do you know what time it is?

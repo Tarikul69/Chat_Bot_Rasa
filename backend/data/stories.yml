@@ -28,3 +28,13 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: tell time
+  steps:
+    - intent: ask_time
+    - action: action_tell_time
+- story: user asks for time
+  steps:
+    - intent: ask_time
+    - action: action_tell_time
+

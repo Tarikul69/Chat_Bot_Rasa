@@ -25,3 +25,29 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+# actions.py
+
+from rasa_sdk import Action
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.types import DomainDict
+from rasa_sdk.events import SlotSet
+import datetime
+
+class ActionTellTime(Action):
+
+    def name(self) -> str:
+        return "action_tell_time"  # This name must match what's in domain.yml
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker,
+            domain: DomainDict) -> list:
+        
+        # Get current system time
+        now = datetime.datetime.now()
+        current_time = now.strftime("%I:%M %p")  # Example: "03:45 PM"
+
+        # Send the response to user
+        dispatcher.utter_message(text=f"The current time is {current_time}")
+
+        return []
+
