@@ -53,3 +53,9 @@ rasa_flask_chatbot/
 ├── requirements.txt          # Python dependencies
 └── README.md
 
+## Run Chatbot
+ - rasa run --enable-api --cors "*"
+ - rasa run actions
+ - python app.py
+
+rasa run --port 5006 --endpoints endpoints.yml
