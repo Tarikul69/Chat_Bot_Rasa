@@ -53,23 +53,3 @@ class ActionTellTime(Action):
 
         return []
     
-class PlaceOrder(Action):
-    def name(self) -> Text:
-        return "action_place_order"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: DomainDict) -> List[Dict[Text, Any]]:
-        
-        # Extract order details from the tracker
-        order_details = tracker.get_slot("order_details")
-        
-        # Here you would typically process the order (e.g., save to a database)
-        # For demonstration, we'll just log it
-        print(f"Order placed: {order_details}")
-
-        # Send confirmation message to the user
-        dispatcher.utter_message(text=f"Your order for {order_details} has been placed successfully!")
-
-        return []
-
