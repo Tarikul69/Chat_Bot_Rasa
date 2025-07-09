@@ -21,4 +21,4 @@ def send():
         return jsonify({"reply": f"Error: {str(e)}"})
 
 if __name__ == "__main__":
-    app.run(host= '192.168.26.186', port=8000)
+    app.run(host= '127.0.0.1', port=8000)
