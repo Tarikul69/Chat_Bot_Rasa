@@ -24,4 +24,4 @@ for task in tasks:
     if os.path.exists(path):
         subprocess.Popen(f'start cmd /K "cd /d {path} && {cmd}"', shell=True)
     else:
-        print(f"❌ Directory does not exist: {path}")
+        print(f"Directory does not exist: {path}")

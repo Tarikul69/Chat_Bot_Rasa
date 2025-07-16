@@ -8,11 +8,11 @@
 
 ## 🚀 Features
 
-- ✅ Intelligent chatbot using Rasa NLU & Core
-- 🌐 Flask web interface with integrated chat UI
-- 💬 Real-time conversation using `socket.io`
-- 🔧 Custom action support
-- 📁 Clean and modular project structure
+- Intelligent chatbot using Rasa NLU & Core
+- Flask web interface with integrated chat UI
+- Real-time conversation using `socket.io`
+- Custom action support
+- Clean and modular project structure
 
 ---
 
